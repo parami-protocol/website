@@ -1,0 +1,14 @@
+.login-box{
+    padding: 0 60px;
+}
+
+.login-link {
+    color: #FFF !important;
+    display: block;
+    float: right;
+}
+
+.login-link:not(:last-child) {
+    /*margin-right: 30px;*/
+    float: left;
+}

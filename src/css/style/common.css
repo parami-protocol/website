@@ -1,0 +1,148 @@
+/* common config */
+body {
+    font-family: 'Raleway', sans-serif !important;
+    color: #FFF !important;
+    -webkit-font-smoothing: antialiased;
+    background-color: #080f1e !important;
+}
+
+body a {
+    text-decoration: none !important;
+    color: #FFF !important;
+    background-color: transparent !important;
+}
+
+body * {
+    box-sizing: border-box !important;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+p {
+    padding: 0 0 10px;
+    margin: 0;
+}
+
+ul,li {
+    margin: 0;
+    padding: 8;
+}
+
+/* level 1 title */
+
+.level-1-title {
+    position: relative;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.level-1-title::after {
+    content: '';
+    position: absolute;
+    bottom: -18px;
+    left: 25px;
+    width: 20px;
+    height: 4px;
+    background-color: currentColor;
+}
+
+/* level 2 title */
+.level-2-title {
+    font-size: 15px;
+    line-height: 2.2;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+/* content */
+.content-text {
+    font-size: 13px;
+    line-height: 2;
+    letter-spacing: 1.3px;
+    /* padding: 0 5%; */
+}
+
+.advantage-content-text {
+    font-size: 13px;
+    line-height: 2;
+    letter-spacing: 1.3px;
+}
+
+@media (max-width: 767px) {
+    .content-text {
+        padding: 0 5%;
+    }
+
+    .level-1-title {
+        font-size: 20px;
+        font-weight: 700;
+        height: 20px;
+        letter-spacing: 6px;
+        line-height: 20px;
+        padding-left: 25px;
+    }
+
+    .level-1-title:after {
+        bottom: -24px;
+    }
+
+    .sub-page {
+        margin-top: 100px;
+    }
+
+}
+
+.page-title {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.login-nav-brand {
+    display: inline-flex;
+    align-items: center;
+}
+
+.protocal-link {
+    color: #0000ff !important;
+    cursor: pointer;
+}
+
+.with-errors {
+    color: #ff0000;
+}
+
+.page-error {
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.btn-submit {
+    text-align: center;
+    min-width: 200px;
+}
+
+.login-nav-user {
+    margin-right: 20px;
+}
+
+.login-nav-login, .login-nav-logout {
+    color: #FFF !important;
+}
+
+.none{
+    display: none!important;
+}
+
+
+
+
+
+

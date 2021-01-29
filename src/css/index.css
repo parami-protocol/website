@@ -1,0 +1,540 @@
+@import url("style/common.css");
+@import url("style/menu.css");
+@import url("style/fontpage.css");
+
+
+
+/* by rhx */
+@media (max-width: 767px) {
+    .section-content {
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-content {
+        padding: 0 210px;
+    }
+}
+
+.section-content {
+    scroll-behavior: smooth;
+    position: relative;
+    /* margin: 0 auto; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* 右侧scroll down */
+.scroll-down {
+    position: fixed;
+    top: 50%;
+    right: 25px;
+    width: 20px;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translate(0, -27%);
+    -ms-transform: translate(0, -27%);
+    transform: translate(0, -27%);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.scroll-down__text {
+    width: 200px;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1;
+    letter-spacing: 0.3em;
+    font-weight: 500;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-family: "Raleway", sans-serif;
+}
+
+.scroll-down__bar {
+    width: 1px;
+    height: 39px;
+    background-color: #FFF;
+    position: relative;
+    top: 35px;
+    left: -1px;
+}
+
+.scroll-down__bar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -3px;
+    width: 7px;
+    height: 7px;
+    background-color: currentColor;
+    border-radius: 7px;
+    -webkit-transform: translate(0, 3px);
+    -ms-transform: translate(0, 3px);
+    transform: translate(0, 3px);
+    -webkit-animation: scrollDown 1.4s cubic-bezier(0.005, 0.025, 0.045, 1.015) 0.3s infinite;
+    animation: scrollDown 1.4s cubic-bezier(0.005, 0.025, 0.045, 1.015) 0.3s infinite;
+}
+
+@media screen and (max-width: 767px) {
+    .scroll-down {
+        top: 83%;
+        right: 8px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .scroll-down__text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .scroll-down__bar {
+        height: 29px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .scroll-down__bar:after {
+        width: 5px;
+        height: 5px;
+        top: -3px;
+        left: -2px;
+    }
+}
+
+/* 左下角联系方式 */
+.top-sns {
+    position: fixed;
+    bottom: 40px;
+    left: 70px;
+    z-index: 2000;
+}
+
+.top-sns ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.top-sns ul li a {
+    display: block;
+    opacity: 1;
+    -webkit-transition: all 0.5s cubic-bezier(0.005, 0.025, 0.045, 1.015);
+    transition: all 0.5s cubic-bezier(0.005, 0.025, 0.045, 1.015);
+}
+p.icp {
+    padding-left: 12px;
+}
+
+@media screen and (max-width: 767px) {
+    .top-sns {
+        bottom: 22px;
+        left: 22px;
+    }
+
+    .top-sns ul li {
+        margin-right: 15px;
+    }
+}
+
+
+/* animate */
+
+@-webkit-keyframes scrollDown { 0% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+100% { -webkit-transform: translate(0, 30px); transform: translate(0, 30px); } }
+
+@keyframes scrollDown { 0% { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
+100% { -webkit-transform: translate(0, 30px); transform: translate(0, 30px); } }
+
+/* section */
+.section-content > section {
+    position: relative;
+    z-index: 2;
+    margin: 40px 0;
+}
+
+#agency {
+    margin-bottom: 80px;
+}
+
+/* 背景动效 */
+.content {
+    position: relative;
+    min-height: 100%;
+    top: 100%;
+    width: 100%;
+    z-index: 2;
+    background: white;
+}
+
+.bg-content {
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* margin: 0 auto; */
+    background-color: #080f1e;
+}
+
+
+
+/* content */
+
+
+/* 核心优势 */
+.application-items li {
+    float: left;
+}
+
+.application-items a {
+    display: block;
+    color: white;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+}
+
+.application-items a:active,.application-items a:focus,.application-items a:hover,.application-items a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.application-content {
+    position: relative;
+    /* height: 200px; */
+    height: 300px;
+}
+
+.application-content>div {
+    display: none;
+    position: absolute;
+}
+
+.application-content>div.user {
+    display: block;
+}
+
+.application-item-img {
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+}
+
+.application-item-img.user {
+    background-image: url(../img/advantage/user-s.png);
+}
+
+.application-item-img.blockchain {
+    background-image: url(../img/advantage/blockchain-s.png);
+}
+
+.application-item-img.antifraud {
+    background-image: url(../img/advantage/antifraud-s.png);
+}
+
+.application-item-img.customer {
+    background-image: url(../img/advantage/customer-s.png);
+}
+
+.application-item-img.adtech {
+    background-image: url(../img/advantage/adtech-s.png);
+}
+
+@media (min-width: 768px) {
+    .application-items {
+        /* margin-top: 50px; */
+        margin-top: 200px;
+        overflow:hidden;
+    }
+
+    .application-items ul {
+        width: 1000000px;
+        padding-top: 50px;
+        position: relative;
+        /* left: -3px; */
+    }
+
+    .application-items ul>li>a {
+        text-align: center;
+        /* width: 150px; */
+        width: 69px;
+        height: 144px;
+    }
+
+    .application-items ul>li>a>.application-item-img {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        opacity: 0.3;
+        transition: all 0.2s ease-in-out;
+        transform: scale(1);
+    }
+
+    .application-items ul>li>a.active>.application-item-img {
+        opacity: 1;
+        transform: scale(1.8);
+    }
+}
+
+@media (min-width: 992px) {
+    .application-items ul {
+        /* left:-23px; */
+    }
+
+    .application-items ul>li>a {
+        /* width: 190px; */
+        width: 114px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .application-items ul {
+        /* left:-38px; */
+    }
+
+    .application-items ul>li>a {
+        /* width: 220px; */
+        width: 155px;
+    }
+}
+
+.carousel-slide {
+    margin-top: 100px;
+}
+
+.slick-slide {
+    height: auto !important;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: white !important;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: white !important;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: white !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* 团队 */
+.member-block {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 80px; */
+    /* overflow: hidden; */
+    margin: 40px auto;
+    position: relative;
+}
+
+#team img {
+    /* width: 160px;
+    height: 160px; */
+    width: 100%;
+    height: 100%;
+}
+
+
+.founder-name {
+    position: absolute;
+    color: #FFF;
+    top: 0;
+    font-size: 25px;
+    text-align: left;
+    left: -50%;
+    /* max-width: 200px; */
+}
+
+.founder-title {
+    color: #FFF;
+    position: absolute;
+    margin-top: 30px;
+    top: 0;
+    text-align: left;
+    left: -50%;
+    max-width: 160px;
+}
+
+
+@media (max-width: 767px) {
+    .founder-name {
+        font-size: 18px;
+        left: -23%;
+    }
+
+    .founder-title {
+        left: -23%;
+    }
+}
+
+#advisors img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 投资机构 */
+#agency img {
+    max-width: 180px;
+    max-height: 60px;
+}
+/* 交易所 */
+#exchange img {
+    max-width: 180px;
+    max-height: 60px;
+}
+/* 合作伙伴 */
+#partner img {
+    max-width: 180px;
+    max-height: 60px;
+}
+/* 般若联盟 */
+#alliance img {
+    max-width: 180px;
+    max-height: 60px;
+}
+
+/* 项目特色 */
+.card {
+    padding: 20px 10px;
+    position: relative;
+    /* transition: all .5s cubic-bezier(.6, .4, .2, 1), z-index 0s .12s; */
+    text-align: center;
+}
+
+.card-content {
+    position: relative;
+    /* background: #f0f4f8; */
+    text-align: center;
+}
+
+.card-content p {
+    text-align: left;
+}
+
+.card:hover {
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+}
+
+
+.agency-img {
+    cursor: pointer;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#feature img {
+    width: 80%;
+}
+
+.visable-hidden {
+    visibility: hidden;
+}
+
+.subtitle-wrapper {
+    margin-bottom: 20px;
+}
+
+/* fadeInSlow */
+@keyframes fadeInDownSlow {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -20%, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+}
+
+.fadeInDownSlow {
+    animation-name: fadeInDownSlow;
+}
+
+
+.advantage-title {
+    margin-top: 40px;
+}
+
+#advantage {
+    margin-top: 200px;
+}
+.lang,.login-nav {
+    position: fixed;
+    margin: 40px 10px;
+    width: 45px;
+    height: 50px;
+    line-height: 50px;
+    color: #FFF;
+    z-index: 1030;
+    right: 100px;
+    text-align: center;
+}
+.login-nav {
+    right: 60px;
+    margin: 40px 0;
+}
+
+@media (max-width: 767px) {
+    #advantage {
+        margin-top: 150px;
+    }
+
+    .login-nav {
+        display: none;
+    }
+    .lang {
+        margin-top: 27px;
+        line-height: inherit;
+        z-index: 9999;
+        right: 60px;
+    }
+}
+.qrcode{
+    background-image: url(../img/other/download.png);
+    background-repeat:no-repeat;
+    width: 120px;
+    height: 120px;
+    background-size: 120px 120px;
+    padding: 18px 10px 17px;
+    position: relative;
+}

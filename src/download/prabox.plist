@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>items</key>
+    <array>
+      <dict>
+        <key>assets</key>
+        <array>
+          <dict>
+            <key>kind</key>
+            <string>software-package</string>
+            <key>url</key>
+            <string>https://static.chain.pro/prabox-download/Prabox1.2.8.ipa</string>
+          </dict>
+          <dict>
+            <key>kind</key>
+            <string>display-image</string>
+            <key>needs-shine</key>
+            <false/>
+            <key>url</key>
+            <string>https://static.chain.pro/prabox-download/avatar.png</string>
+          </dict>
+        </array>
+        <key>metadata</key>
+        <dict>
+          <key>bundle-identifier</key>
+          <string>pro.chain.wallet-in1</string>
+          <key>bundle-version</key>
+          <string>2018122601</string>
+          <key>subtitle</key>
+          <string>1.2.8 (2018122601)</string>
+          <key>title</key>
+          <string>prabox</string>
+          <key>kind</key>
+          <string>software</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

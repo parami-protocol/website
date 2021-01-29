@@ -1,0 +1,287 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="IIC">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IIC智投链</title>
+  <link rel="stylesheet" href="../../js/lib/bootstrap-3.3.7/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/navbar-fixed-left.css">
+  <link rel="stylesheet" href="../../css/style/common.css">
+  <link rel="stylesheet" href="../../css/style/menu.css">
+  <link rel="stylesheet" href="../../css/style/loginMenu.css">
+  <link rel="stylesheet" href="../../css/login.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.iicoin.io/favicon.ico">
+  <style>
+    .send_code {
+      background: #3c3c3c;
+      position: absolute;
+      color: #FFF;
+      outline: none;
+      border: none;
+      right: 20px;
+      border-radius: 5px;
+      top: 50%;
+      z-index: 999;
+      transform: translate(0, -50%);
+      /*padding: 0px;*/
+    }
+    @media (min-width: 768px) {
+      .send_code {
+        transform: translate(0, -70%);
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+  <script src="../../js/lib/jquery-3.2.1/jquery.min.js"></script>
+  <script src="../../js/lib/bootstrap-3.3.7/bootstrap.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script> -->
+  <script src="../../js/lib/jquery.serializejson.min.js"></script>
+  <script src="../../js/lib/js.cookie.min.js"></script>
+  <script src="../../js/lib/jquery.purl/purl.js"></script>
+  <script src="../../js/lib/i18n/jquery.i18n.js"></script>
+  <script src="../../js/lib/i18n/jquery.i18n.messagestore.js"></script>
+
+  <script src="../../js/config.js"></script>
+  <script src="../../js/utils.js"></script>
+  <script src="../../js/lib/intl-tel-input/intlTelInput.min.js"></script>
+</head>
+
+<body>
+ <img src="../../img/operation/iic/iic.png" class="iic_login_logo">
+<nav class="navbar navbar-default navbar-fixed-left bacter-theme">
+  <div class="container">
+    <div class="navbar-header">
+      <!--data-toggle="collapse" data-target="#navbar"-->
+      <!--aria-expanded="false"-->
+      <button type="button" class="navbar-toggle collapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+     
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right nav-theme">
+        <li>
+          <a class="lang-btn" href="javascript:void(0);" onclick="switchLang4Login(2);">
+            <i></i>
+            <span data-i18n="language">中文</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container sub-page">
+  <div class="page-title"></div>
+  <div class="row">
+    <div class="col-md-offset-4 col-md-5 col-sm-offset-2 col-sm-10 page-error" role="alert"></div>
+  </div>
+  <form class="form-horizontal">
+    <div class="form-group has-feedback">
+      <label for="username" class="control-label col-md-offset-3 col-md-2 col-sm-2" data-i18n="placeholder_phonenum">
+        Phone
+      </label>
+      <div class="col-md-4 col-sm-10">
+        <div>
+          <input id="phone" name="username" type="text" class="form-control" placeholder="Please input phone number">
+          <button id="sendCode" class="send_code" type="button" name="sendCode" onclick="clickSendValid()">获取验证码</button>
+        </div>
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+    <div class="form-group has-feedback">
+      <label for="password" class="control-label col-md-offset-3 col-md-2 col-sm-2" data-i18n="placeholder_activecode">
+        Password
+      </label>
+      <div class="col-md-4 col-sm-10">
+        <input type="text" class="form-control" placeholder="Please input verifyCode" class="active_code"
+               id="recipient-name" name="activeCode">
+        <div class="help-block with-errors"></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-offset-4 col-md-4 col-sm-12 login-box">
+        <!-- <a class="login-link text-left" href="/tpl/forget_pwd_init.html" data-i18n="forget_pwd">Forget Password</a> -->
+        <!-- <a class="login-link text-right" href="/tpl/register.html" data-i18n="register_name">Register Accounts</a> -->
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-offset-4 col-md-4 col-sm-offset-2 col-sm-10 text-center">
+        <button class="btn btn-default btn-submit" data-i18n="login" name="btn-reg" type="button" onclick="bindRegByPhone()">Login</button>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+<script>
+    var host = (location.host !== 'chain.pro' && location.host !== 'prabox.net') ? 'http://47.91.247.187' : '';
+    var SIGN_MESSAGE  = host + '/proback/api/v2/account/getLoginSms';
+    var SIGN_MESSAGE_VERIFY  = host + '/proback/api/v2/smsAuthenticate';
+    $("#phone").intlTelInput({
+        // allowDropdown: false,
+        // autoHideDialCode: false,
+        autoPlaceholder: "off",
+        // dropdownContainer: "body",
+        // excludeCountries: ["us"],
+        // formatOnDisplay: true,
+        geoIpLookup: function(callback) {
+            $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+                var countryCode = (resp && resp.country) ? resp.country : "";
+                callback(countryCode);
+            });
+        },
+        // hiddenInput: "full_number",
+        // initialCountry: "auto",
+        nationalMode: true,
+        // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+        placeholderNumberType: "MOBILE",
+        preferredCountries: ['cn', 'us' ,'ca','jp'],
+        // separateDialCode: true,
+        utilsScript: "../../js/lib/intl-tel-input/utils.js"
+    });
+    function sendSms(opt) {
+        var pram = opt.pram
+        pram.lanKey = pram.langKey
+        pram.source='IIC'
+        console.log(pram)
+        var rt ;
+        $.ajax({
+            url: opt.url,
+            method: 'GET',
+            data: pram,
+            async: false,
+            contentType: 'application/json'
+        }).done(function (result, status, xhr) {
+            rt =  result;
+        }).fail(function (xhr, status, error) {
+            if(xhr.status == 403){
+                alert('访问频次过高,锁定半小时,请稍后重试');
+            }
+            $('.alert').html(xhr.responseText);
+            $('.alert').removeClass('hidden');
+        });
+        return rt;
+    }
+    function clickSendValid(){
+        var telInput = $("#phone");
+        if ($.trim(telInput.val())) {
+            var mobilePhoneNumber =  telInput.val();
+            var pram = {
+                phoneNum: mobilePhoneNumber
+            }
+            var result = sendSms({
+                url: SIGN_MESSAGE,
+                pram: pram
+            })
+            if(result.success){
+                $('.active_code').show();
+                var me = $('#sendCode')
+                var msg = me.text()
+                countDown({
+                    el: me,
+                    duration: 60,
+                    cb: function () {
+                        me.text(msg)
+                        me.removeAttr("disabled");
+                        me.toggleClass("count_down");
+                    }
+                })
+            } else {
+                alert(result.message);
+                window.location.href = './reg.html';
+            }
+        }
+    }
+    function bindRegByPhone(){
+        var activeCode = $('input[name=activeCode]').val();
+        if(activeCode == null || activeCode==""){
+            alert("请先获取验证码");
+            return;
+        }
+        var telInput = $("#phone");
+        var mobilePhoneNumber =  telInput.val();
+        var o = {
+            "verifyCode": activeCode,
+            "phoneNumber": mobilePhoneNumber
+        }
+        $.ajax({
+            url: SIGN_MESSAGE_VERIFY,
+            method: 'POST',
+            data: o
+        }).done(function (result, status, xhr) {
+            if (!result.success) {
+                alert(result.message);
+            } else {
+                Cookies.set('token', result.data.token.substring(7), {expires: 3});
+                window.location.href = IIC_KYC_STATUS_PAGE;
+            }
+        }).fail(function (xhr, status, error) {
+            $('.alert').html(xhr.responseText);
+            $('.alert').removeClass('hidden');
+        });
+    }
+    function getParam(paramName) {
+        paramValue = "", isFound = !1;
+        if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+            arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&"), i = 0;
+            while (i < arrSource.length && !isFound) arrSource[i].indexOf("=") > 0 && arrSource[i].split("=")[0].toLowerCase() == paramName.toLowerCase() && (paramValue = arrSource[i].split("=")[1], isFound = !0), i++
+        }
+        return paramValue == "" && (paramValue = null), paramValue ;
+    }
+
+
+    function countDown(opt) {
+        opt.el.attr("disabled","true");
+        // opt.el.attr("color","#F9CD7B");
+        opt.el.toggleClass("count_down");
+        console.log(opt)
+        var n = opt.duration
+        var el = opt.el
+
+        setTimeout(function () {
+            clearInterval(timer)
+            opt.cb && opt.cb()
+        }, n * 1000)
+
+        n--
+        el.text(n + ' s ')
+        var timer = setInterval(function () {
+            n--
+            console.log(n)
+            el.text(n + ' s ')
+        }, 1000)
+
+    }
+    function isEmpty(obj){
+        if(typeof obj == "undefined" || obj == null || obj == ""){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+$(document).ready(function () {
+  // alive(function () {
+  //   window.location.href = HOME_PAGE;
+  // });
+
+  $.i18n({locale: 'en'}).load({
+    en: '/i18n/en.json',
+    zh: '/i18n/zh.json'
+  }).then(function () {
+    switchLang4Login(2);
+  });
+})
+function switchLang4Login(type) {
+  switchLang(type);
+  $('input[name=username]').attr('placeholder', $.i18n('placeholder_phonenum'));
+  $('input[name=activeCode]').attr('placeholder', $.i18n('placeholder_activecode'));
+}
+</script>
+
+</html>
