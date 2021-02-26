@@ -98,6 +98,12 @@ function switchLang4Index(type) {
   }
   */
   switchLogoTitle()
+
+  if ($.i18n().locale === 'zh' ) {
+    $(document).attr("title", "区块链数字广告 - PARAMI The Ad3.0 Platform");
+  } else {
+    $(document).attr("title", "PARAMI - Blockchain Digital Advertising Empowered by The Ad3.0 Platform");
+  }
 }
 
 function randomFadeInString(str, maxDurationSecond, delaySecond) {
