@@ -14,6 +14,14 @@ function switchLogoTitle() {
       $('#js__parami-logo-mb1').show()
       $('#js__parami-logo-mb2').show()
       $('#js__parami-title-mb-en').show()
+      $('.bacter-theme .navbar-brand').css({
+        paddingTop: '20px',
+        paddingLeft: '25px'
+      })
+      $('#js__parami-logo-mb1').css({
+        width: '40px',
+        height: '40px'
+      })
     } else if (Cookies.get("lang") === 'zh') {
       $('#js__parami-logo-pc-en1').hide()
       $('#js__parami-logo-pc-en2').hide()
@@ -26,6 +34,14 @@ function switchLogoTitle() {
       $('#js__parami-logo-mb1').show()
       $('#js__parami-logo-mb2').show()
       $('#js__parami-title-mb-zh').show()
+      $('.bacter-theme .navbar-brand').css({
+        paddingTop: '20px',
+        paddingLeft: '25px'
+      })
+      $('#js__parami-logo-mb1').css({
+        width: '40px',
+        height: '40px'
+      })
     }
   } else if (deviceType === 'pc') {
     if (Cookies.get("lang") === 'en') {
@@ -164,6 +180,14 @@ $(document).ready(function () {
     $ul.css({
       left: '0px'
     });
+    if(getMobilePC() === 'pc'){
+      $('#js__parami-logo-mb1').hide()
+      $('#js__parami-logo-pc-en1').show()
+    }else {
+      $('#js__parami-logo-mb1').show()
+      $('#js__parami-logo-pc-en1').hide()
+    }
+
     // if (width >= 768 && width < 992) {
     //     $ul.css({
     //         left: '-3px'

@@ -538,3 +538,8 @@ p.icp {
     padding: 18px 10px 17px;
     position: relative;
 }
+
+
+.none{
+    display: none;
+}
