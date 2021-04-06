@@ -1,14 +1,15 @@
 /* common config */
 body {
     font-family: 'Raleway', sans-serif !important;
-    color: #FFF !important;
+    /*color: #FFF !important;*/
     -webkit-font-smoothing: antialiased;
-    background-color: #080f1e !important;
+    /*background-color: #080f1e !important;*/
 }
 
 body a {
     text-decoration: none !important;
-    color: #FFF !important;
+    /*color: #FFF !important;*/
+    color:  #080f1e !important;
     background-color: transparent !important;
 }
 

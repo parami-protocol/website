@@ -187,7 +187,9 @@
     }
 
     .bacter-theme .navbar-collapse {
-        background: black;
+        /*background: black;*/
+        background: #080f1e;
+        opacity: .8;
         height: 100vh;
         position: relative;
         top: -60px;
@@ -258,18 +260,42 @@
 }
 
 .navbar-default .navbar-toggle {
+    /*border-color: transparent;*/
     border-color: transparent;
 }
 
 .navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover {
+    /*background-color: transparent;*/
     background-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
+    /*background-color: white;*/
+    background-color: #fff;
 }
 
 .card-head {
     margin-top: 80px;
     text-align: center;
 }
+
+.navbar-default .collapsed:focus,.navbar-default .collapsed:hover {
+    /*background-color: transparent;*/
+    background-color: #fff;
+}
+
+.navbar-default .collapsed .icon-bar {
+    /*background-color: white;*/
+    background-color: #080f1e;
+}
+
+.collapsed .lang-btn{
+    color: #080f1e;
+}
+
+.lang-btn {
+    color: #fff;
+}
+
+
+
