@@ -47,14 +47,13 @@
         for (var A = 0; A < m.length; A++) {
           var D = m[A]
             , N = new THREE.PointsMaterial({
-            // color: '14999248', //6737151,
-            color: '#E53326',
-            opacity: .85,
+            // color: 14999248, //6737151,
+            color: '#e0e1e1', //6737151,
+            opacity: .6,
             // size: 1.5,
             size: 2,
-            // size: 20,
             map: THREE.ImageUtils.loadTexture(h.data("texture")),
-            transparent: 0.5
+            transparent: !0
           });
           d.hex[A] = new THREE.Points(u.hex, N),
             d.hex[A].scale.x = d.hex[A].scale.y = D.scale,
@@ -128,12 +127,12 @@
             w[0].start();
             for (var d = 0; d < e.scene.children.length; d++)
               // "text" !== e.scene.children[d].name && (e.scene.children[d].material.color = new THREE.Color(13364991))
-              "text" !== e.scene.children[d].name && (e.scene.children[d].material.color = new THREE.Color('#ef2213'))
+              "text" !== e.scene.children[d].name && (e.scene.children[d].material.color = new THREE.Color('#dfe4e2'))
           }
         } else
           for (var f = 0; f < e.scene.children.length; f++)
             // "text" !== e.scene.children[f].name && (e.scene.children[f].material.color = new THREE.Color(14999248)); // old:6737151
-            "text" !== e.scene.children[f].name && (e.scene.children[f].material.color = new THREE.Color('#f61505')); // old:6737151
+            "text" !== e.scene.children[f].name && (e.scene.children[f].material.color = new THREE.Color('#dfe4e2')); // old:6737151
         !0 === b && (T += .75 * Math.cos(Math.PI / 180),
           l.position.x += -(o + l.position.x) / 18,
           l.position.y += (i - l.position.y) / 13,
