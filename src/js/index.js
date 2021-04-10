@@ -15,8 +15,8 @@ function switchLogoTitle() {
       // $('#js__parami-logo-mb2').show()
       // $('#js__parami-title-mb-en').show()
       $('.bacter-theme .navbar-brand').css({
-        paddingTop: '20px',
-        paddingLeft: '25px'
+        paddingTop: '10px',
+        paddingLeft: '15px'
       })
       // $('#js__parami-logo-mb1').css({
       //   width: '40px',
