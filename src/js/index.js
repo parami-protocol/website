@@ -3,71 +3,71 @@ function switchLogoTitle() {
   var deviceType = getMobilePC()
   if (deviceType === 'mobile') {
     if (Cookies.get("lang") === 'en') {
-      $('#js__parami-logo-pc-en1').hide()
-      $('#js__parami-logo-pc-en2').hide()
-      $('#js__parami-logo-pc-zh1').hide()
-      $('#js__parami-logo-pc-zh2').hide()
-      $('#js__parami-title-pc-en').hide()
-      $('#js__parami-title-pc-zh').hide()
-
-      $('#js__parami-title-mb-zh').hide()
-      $('#js__parami-logo-mb1').show()
-      $('#js__parami-logo-mb2').show()
-      $('#js__parami-title-mb-en').show()
+      // $('#js__parami-logo-pc-en1').hide()
+      // $('#js__parami-logo-pc-en2').hide()
+      // $('#js__parami-logo-pc-zh1').hide()
+      // $('#js__parami-logo-pc-zh2').hide()
+      // $('#js__parami-title-pc-en').hide()
+      // $('#js__parami-title-pc-zh').hide()
+      //
+      // $('#js__parami-title-mb-zh').hide()
+      // $('#js__parami-logo-mb1').show()
+      // $('#js__parami-logo-mb2').show()
+      // $('#js__parami-title-mb-en').show()
       $('.bacter-theme .navbar-brand').css({
         paddingTop: '20px',
         paddingLeft: '25px'
       })
-      $('#js__parami-logo-mb1').css({
-        width: '40px',
-        height: '40px'
-      })
+      // $('#js__parami-logo-mb1').css({
+      //   width: '40px',
+      //   height: '40px'
+      // })
     } else if (Cookies.get("lang") === 'zh') {
-      $('#js__parami-logo-pc-en1').hide()
-      $('#js__parami-logo-pc-en2').hide()
-      $('#js__parami-logo-pc-zh1').hide()
-      $('#js__parami-logo-pc-zh2').hide()
-      $('#js__parami-title-pc-en').hide()
-      $('#js__parami-title-pc-zh').hide()
-
-      $('#js__parami-title-mb-en').hide()
-      $('#js__parami-logo-mb1').show()
-      $('#js__parami-logo-mb2').show()
-      $('#js__parami-title-mb-zh').show()
-      $('.bacter-theme .navbar-brand').css({
-        paddingTop: '20px',
-        paddingLeft: '25px'
-      })
-      $('#js__parami-logo-mb1').css({
-        width: '40px',
-        height: '40px'
-      })
+      // $('#js__parami-logo-pc-en1').hide()
+      // $('#js__parami-logo-pc-en2').hide()
+      // $('#js__parami-logo-pc-zh1').hide()
+      // $('#js__parami-logo-pc-zh2').hide()
+      // $('#js__parami-title-pc-en').hide()
+      // $('#js__parami-title-pc-zh').hide()
+      //
+      // $('#js__parami-title-mb-en').hide()
+      // $('#js__parami-logo-mb1').show()
+      // $('#js__parami-logo-mb2').show()
+      // $('#js__parami-title-mb-zh').show()
+      // $('.bacter-theme .navbar-brand').css({
+      //   paddingTop: '20px',
+      //   paddingLeft: '25px'
+      // })
+      // $('#js__parami-logo-mb1').css({
+      //   width: '40px',
+      //   height: '40px'
+      // })
     }
   } else if (deviceType === 'pc') {
     if (Cookies.get("lang") === 'en') {
-      $('#js__parami-logo-mb1').hide()
-      $('#js__parami-logo-mb2').hide()
-      $('#js__parami-title-mb-en').hide()
-      $('#js__parami-title-mb-zh').hide()
-      $('#js__parami-logo-pc-zh1').hide()
-      $('#js__parami-logo-pc-zh2').hide()
-      $('#js__parami-title-pc-zh').hide()
-
-      $('#js__parami-logo-pc-en1').show()
-      $('#js__parami-logo-pc-en2').show()
-      $('#js__parami-title-pc-en').show()
+      // $('#js__parami-logo-mb1').hide()
+      // $('#js__parami-logo-mb2').hide()
+      // $('#js__parami-title-mb-en').hide()
+      // $('#js__parami-title-mb-zh').hide()
+      // $('#js__parami-logo-pc-zh1').hide()
+      // $('#js__parami-logo-pc-zh2').hide()
+      // $('#js__parami-title-pc-zh').hide()
+      //
+      // $('#js__parami-logo-pc-en1').show()
+      // $('#js__parami-logo-pc-en2').show()
+      // $('#js__parami-title-pc-en').show()
     } else if (Cookies.get("lang") === 'zh') {
-      $('#js__parami-logo-mb1').hide()
-      $('#js__parami-logo-mb2').hide()
-      $('#js__parami-title-mb-en').hide()
-      $('#js__parami-title-mb-zh').hide()
-      $('#js__parami-logo-pc-en1').hide()
-      $('#js__parami-logo-pc-en2').hide()
-      $('#js__parami-title-pc-en').hide()
-
-      $('#js__parami-logo-pc-zh1').show()
-      $('#js__parami-logo-pc-zh2').show()
-      $('#js__parami-title-pc-zh').show()
+      // $('#js__parami-logo-mb1').hide()
+      // $('#js__parami-logo-mb2').hide()
+      // $('#js__parami-title-mb-en').hide()
+      // $('#js__parami-title-mb-zh').hide()
+      // $('#js__parami-logo-pc-en1').hide()
+      // $('#js__parami-logo-pc-en2').hide()
+      // $('#js__parami-title-pc-en').hide()
+      //
+      // $('#js__parami-logo-pc-zh1').show()
+      // $('#js__parami-logo-pc-zh2').show()
+      // $('#js__parami-title-pc-zh').show()
     }
   }
 }
@@ -174,19 +174,33 @@ $(document).ready(function () {
 //   }
 // });
 
+  resetApplicationItemsOffset();
   function resetApplicationItemsOffset() {
     var $ul = $('.application-items ul');
     // var width = $(window).width();
     $ul.css({
-      left: '0px'
+      left: '0'
     });
-    if(getMobilePC() === 'pc'){
-      $('#js__parami-logo-mb1').hide()
-      $('#js__parami-logo-pc-en1').show()
-    }else {
-      $('#js__parami-logo-mb1').show()
-      $('#js__parami-logo-pc-en1').hide()
+
+    var deviceType = getMobilePC()
+    if (deviceType === 'mobile') {
+      $('#js__parami-logo').css({
+        width: '40px',
+        height: '40px'
+      })
+    } else{
+      $('#js__parami-logo').css({
+        width: '80px',
+        height: '80px'
+      })
     }
+    // if(getMobilePC() === 'pc'){
+    //   $('#js__parami-logo-mb1').hide()
+    //   $('#js__parami-logo-pc-en1').show()
+    // }else {
+    //   $('#js__parami-logo-mb1').show()
+    //   $('#js__parami-logo-pc-en1').hide()
+    // }
 
     // if (width >= 768 && width < 992) {
     //     $ul.css({
