@@ -186,12 +186,12 @@ $(document).ready(function () {
     if (deviceType === 'mobile') {
       $('#js__parami-logo').css({
         width: '40px',
-        height: '40px'
+        // height: '40px'
       })
     } else{
       $('#js__parami-logo').css({
         width: '80px',
-        height: '80px'
+        // height: '80px'
       })
     }
     // if(getMobilePC() === 'pc'){
