@@ -185,8 +185,7 @@ $(document).ready(function () {
     var deviceType = getMobilePC()
     if (deviceType === 'mobile') {
       $('#js__parami-logo').css({
-        width: '40px',
-        // height: '40px'
+        width: '50px',
       })
     } else{
       $('#js__parami-logo').css({
@@ -276,23 +275,23 @@ $(document).ready(function () {
     switchLang4Index(1);
   });
 
-  alive(function (result) {
-
-    if (result.success) {
-      if (result.data) {
-        var data = result.data
-        var html = '<a href="../tpl/kyc_status.html">Hi, ' + data.nickname + ' </a>'
-        html += '<a class="logout" style="cursor: pointer;">退出</a>'
-        $('.login-nav-login-wrapper').empty().html(html)
-      }
-    }
-
-    // $('.left-nav-login').addClass('hidden');
-    // $('.left-nav-logout').removeClass('hidden');
-    // $('.login-nav-login-wrapper').addClass('hidden');
-    // $('.login-nav-logout-wrapper').removeClass('hidden');
-    // $('.login-nav-user').html(Cookies.get('user'));
-  });
+  // alive(function (result) {
+  //
+  //   if (result.success) {
+  //     if (result.data) {
+  //       var data = result.data
+  //       var html = '<a href="../tpl/kyc_status.html">Hi, ' + data.nickname + ' </a>'
+  //       html += '<a class="logout" style="cursor: pointer;">退出</a>'
+  //       $('.login-nav-login-wrapper').empty().html(html)
+  //     }
+  //   }
+  //
+  //   // $('.left-nav-login').addClass('hidden');
+  //   // $('.left-nav-logout').removeClass('hidden');
+  //   // $('.login-nav-login-wrapper').addClass('hidden');
+  //   // $('.login-nav-logout-wrapper').removeClass('hidden');
+  //   // $('.login-nav-user').html(Cookies.get('user'));
+  // });
 
   $('.collapse a').click(function () {
     $('.collapse').collapse('hide');
