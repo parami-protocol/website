@@ -185,11 +185,11 @@ $(document).ready(function () {
     var deviceType = getMobilePC()
     if (deviceType === 'mobile') {
       $('#js__parami-logo').css({
-        width: '50px',
+        width: '40px',
       })
     } else{
       $('#js__parami-logo').css({
-        width: '80px',
+        width: '60px',
         // height: '80px'
       })
     }

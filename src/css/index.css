@@ -174,7 +174,7 @@ p.icp {
 .section-content > section {
     position: relative;
     z-index: 2;
-    margin: 40px 0;
+    /*margin: 40px 0;*/
 }
 
 #agency {
@@ -531,7 +531,8 @@ p.icp {
         margin-top: 27px;
         line-height: inherit;
         z-index: 9999;
-        right: 60px;
+        /*right: 60px;*/
+        right: 20px;
     }
 }
 .qrcode{

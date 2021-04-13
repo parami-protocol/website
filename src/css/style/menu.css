@@ -79,7 +79,8 @@
     align-items: center;
     align-content: center;
     padding-top: 10px;
-    padding-left: 40px;
+    /*padding-left: 40px;*/
+    padding-left: 20px;
 }
 
 .navbar-default.bacter-theme .navbar-collapse {
