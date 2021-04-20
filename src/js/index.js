@@ -116,9 +116,9 @@ function switchLang4Index(type) {
   switchLogoTitle()
 
   if ($.i18n().locale === 'zh' ) {
-    $(document).attr("title", "区块链数字广告 - PARAMI The Ad3.0 Platform");
+    $(document).attr("title", "BUILD AD３ FOR WEB３");
   } else {
-    $(document).attr("title", "PARAMI - Blockchain Digital Advertising Empowered by The Ad3.0 Platform");
+    $(document).attr("title", "BUILD AD３ FOR WEB３");
   }
 }
 
