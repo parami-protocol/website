@@ -115,11 +115,12 @@ function switchLang4Index(type) {
   */
   switchLogoTitle()
 
-  if ($.i18n().locale === 'zh' ) {
-    $(document).attr("title", "BUILD AD３ FOR WEB３");
-  } else {
-    $(document).attr("title", "BUILD AD３ FOR WEB３");
-  }
+  $(document).attr("title", "PARAMI - BUILD AD３ FOR WEB３");
+  // if ($.i18n().locale === 'zh' ) {
+  //   $(document).attr("title", "PARAMI - BUILD AD３ FOR WEB３");
+  // } else {
+  //   $(document).attr("title", "PARAMI - BUILD AD３ FOR WEB３");
+  // }
 }
 
 function randomFadeInString(str, maxDurationSecond, delaySecond) {
