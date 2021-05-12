@@ -113,7 +113,7 @@ function switchLang4Index(type) {
     $('.whitepaper_pdf_btn').attr('href', 'https://parami.io/whitepaper.pdf');
   }
   */
-  $('.whitepaper_pdf_btn').attr('href', '/Parami_Protocol_Light_Paper.pptx');
+  // $('.whitepaper_pdf_btn').attr('href', '/Parami_Protocol_Light_Paper.pptx');
   switchLogoTitle()
 
   $(document).attr("title", "PARAMI - BUILD AD３ FOR WEB３");
