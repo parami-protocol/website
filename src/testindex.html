@@ -1,0 +1,524 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta
+      name="description"
+      content="Parami is to build a transparent digital advertising data ecosystem by connecting advertisers, media and developers, improving the efficiency of advertising business, reducing the adverting traffic fraud, to intermediaries, and using big data to reap the maximum benefits."
+  />
+  <meta
+      name="keywords"
+      content="airdrop,coin airdrop,candy airdrop,ad3,parami,candy box,crypto token"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>区块链数字广告 - PARAMI The Ad3.0 Platform</title>
+  <link
+      rel="icon"
+      type="image/x-icon"
+      href="img/fav.ico"
+  />
+  <link rel="stylesheet" href="js/lib/bootstrap-3.3.7/bootstrap.min.css"/>
+  <link
+      rel="stylesheet"
+      href="js/lib/tooltipster/tooltipster.bundle.min.css"
+  />
+  <link
+      rel="stylesheet"
+      href="js/lib/font-awesome/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" href="js/lib/google-font/css/raleway-font.css"/>
+  <link rel="stylesheet" href="js/lib/animate/animate.css"/>
+  <link rel="stylesheet" href="js/lib/slick/slick.css"/>
+  <link rel="stylesheet" href="js/lib/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/navbar-fixed-left.css"/>
+  <link rel="stylesheet" href="css/index.css"/>
+
+  <script src="js/lib/js.cookie.min.js"></script>
+  <script src="js/lib/jquery-3.2.1/jquery.min.js"></script>
+  <script src="js/lib/bootstrap-3.3.7/bootstrap.min.js"></script>
+  <script src="js/lib/gsap/TweenMax.js"></script>
+  <script src="js/lib/createjs/Tween.min.js"></script>
+  <script src="js/lib/jquery.purl/purl.js"></script>
+  <script src="js/lib/i18n/jquery.i18n.js"></script>
+  <script src="js/lib/i18n/jquery.i18n.messagestore.js"></script>
+  <script src="js/lib/slick/slick.min.js"></script>
+  <script src="js/lib/tooltipster/tooltipster.bundle.min.js"></script>
+  <script src="js/lib/wow/wow.min.js"></script>
+  <script src="js/lib/three/three.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/index.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-V41P4BTZFG"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+
+    gtag("js", new Date())
+
+    gtag("config", "G-V41P4BTZFG")
+  </script>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script")
+      hm.src = "https://hm.baidu.com/hm.js?800cc0e2ef1210cfcc838555389396f2"
+      var s = document.getElementsByTagName("script")[0]
+      s.parentNode.insertBefore(hm, s)
+    })()
+  </script>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-left bacter-theme">
+  <div class="container">
+    <div class="navbar-header">
+      <!--data-toggle="collapse" data-target="#navbar"-->
+      <!--aria-expanded="false"-->
+      <button type="button" class="navbar-toggle collapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">
+        <img
+            id="js__parami-logo"
+            src="./img/parami/parami-logo.png"
+            alt="parami-logo"
+        />
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right nav-theme">
+        <li>
+          <a href="#about">
+            <i></i>
+            <span data-i18n="home">HOME</span>
+          </a>
+        </li>
+        <li>
+          <a href="#feature">
+            <i></i>
+            <span data-i18n="feature">HIGHLIGHT</span>
+          </a>
+        </li>
+        <li>
+          <a href="#advantage">
+            <i></i>
+            <span data-i18n="advantage">ADVANTAGE</span>
+          </a>
+        </li>
+        <li>
+          <a href="#whitepaper" class="pdf-link">
+            <i></i>
+            <span data-i18n="whitepaper">WHITEPAPER</span>
+          </a>
+        </li>
+        <li>
+          <a href="#cooperation" class="pdf-link">
+            <i></i>
+            <span data-i18n="cooperation">COOPERATION</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="lang collapsed">
+  <div
+      class="lang-btn"
+      href="javascript:void(0);"
+      onclick="switchLang4Index(2);"
+  >
+    <i></i>
+    <span data-i18n="language">中文</span>
+  </div>
+</div>
+<div class="login-nav">
+  <!-- <div class="login-nav-login-wrapper">
+<a href="tpl/login.html" class="login-nav-login" data-i18n="login">LOGIN</a>
+</div> -->
+  <div class="login-nav-logout-wrapper hidden">
+    <span class="login-nav-user"></span>
+    <a
+        href="javascript:void(0);"
+        class="login-nav-logout"
+        data-i18n="logout"
+    >LOGOUT</a
+    >
+  </div>
+</div>
+
+<div id="js-top-sns" class="top-sns">
+  <ul>
+    <li>
+      <a href="https://twitter.com/ParamiProtocol" target="_blank"
+      ><i class="fa fa-twitter"></i
+      ></a>
+    </li>
+    <li>
+      <a href="https://paramiprotocol.medium.com/" target="_blank"
+      ><i class="fa fa-medium"></i
+      ></a>
+    </li>
+    <li>
+      <a href="mailto:info@parami.io" target="_blank"
+      ><i class="fa fa fa-envelope"></i
+      ></a>
+    </li>
+  </ul>
+</div>
+
+<div id="js-scroll-down" class="scroll-down">
+  <div class="scroll-down__text">SCROLL DOWN</div>
+  <div class="scroll-down__bar"></div>
+</div>
+
+<div id="js-content" class="content bg-content">
+  <div id="js-mainvisual__mv2" class="mainvisual__mv is-loaded"></div>
+  <div id="js-home-scroll-container" class="section-home">
+    <div
+        id="js-mainvisual"
+        class="section mainvisual is-current"
+        data-next="#js-top-project"
+    >
+      <div
+          id="js-mainvisual__datas"
+          data-texture="img/bacter/circle.png"
+          data-geometry="img/bacter/bacter.png"
+          data-texture2="img/bacter/bg.png"
+          data-filter="img/bacter/filter.png"
+          data-bacter="img/bacter/logo-black.png"
+      ></div>
+    </div>
+  </div>
+</div>
+
+<div id="content" class="section-content">
+  <section id="about" class="spotlight">
+    <div class="spotlight-center text-center">
+      <div class="container-fluid">
+        <!-- <h2 id="main_title"></h2> -->
+        <img
+            id="js__parami-title-pc-en"
+            src="./img/parami/logo-max.png"
+            alt="parami-title"
+            height="40"
+            style="margin-bottom: 30px"
+        />
+        <!--            <img-->
+        <!--              id="js__parami-title-pc-en"-->
+        <!--              src="./img/other/parami-logo.svg"-->
+        <!--              alt="parami-title"-->
+        <!--              height="50"-->
+        <!--              style="margin-bottom: 30px"-->
+        <!--            />-->
+        <!--            <img-->
+        <!--              id="js__parami-title-pc-zh"-->
+        <!--              src="./img/other/parami-logo.svg"-->
+        <!--              alt="parami-title"-->
+        <!--              height="50"-->
+        <!--              style="margin-bottom: 30px"-->
+        <!--            />-->
+        <!--            <img-->
+        <!--              id="js__parami-title-mb-en"-->
+        <!--              src="./img/other/parami-logo.svg"-->
+        <!--              alt="parami-title"-->
+        <!--              height="22"-->
+        <!--              style="margin-bottom: 30px"-->
+        <!--            />-->
+        <!--            <img-->
+        <!--              id="js__parami-title-mb-zh"-->
+        <!--              src="./img/other/parami-logo.svg"-->
+        <!--              alt="parami-title"-->
+        <!--              height="40"-->
+        <!--              style="margin-bottom: 30px"-->
+        <!--            />-->
+        <p id="subtitle_main"></p>
+        <p class="subtitle-wrapper">
+          <strong id="subtitle" class="subtitle"> </strong>
+        </p>
+        <div class="row">
+          <div>
+            <br class="visible-xs"/>
+            <div
+                class="wow fadeIn visable-hidden"
+                data-wow-duration="2s"
+                data-wow-delay="2s"
+            >
+              <a
+                  id="web-prabox"
+                  href="http://apps.parami.io/"
+                  target="_blank"
+                  class="pdf-button none"
+              >
+                <!--   src="./img/other/web-candy-icon.png"-->
+                <img
+                    src="./img/other/web-candy-icon-v2.png"
+                    alt="web-candy"
+                    width="21px"
+                    height="21px"
+                    style="float: left; margin-left: 15px"
+                />
+                <span data-i18n="webcandy_button">VISIT APPS UI</span>
+                <div class="btn-deco">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </a>
+            </div>
+            <!-- <div class="wow fadeIn visable-hidden" data-wow-duration="2s" data-wow-delay="2s">
+          <div class="qrcode pdf-button"></div>
+        </div> -->
+          </div>
+        </div>
+        <div class="row" style="margin-top: 26px">
+          <div>
+            <br class="visible-xs"/>
+            <div
+                class="wow fadeIn visable-hidden"
+                data-wow-duration="2s"
+                data-wow-delay="2s"
+            >
+              <a
+                  href="https://telemetry.polkadot.io/#/Parami%20Testnet"
+                  target="_blank"
+                  class="pdf-button pdf-link none"
+              >
+                <svg
+                    width="21px"
+                    height="21px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="float: left; margin-left: 15px"
+                >
+                  <g fill="#080f1e" fill-rule="evenodd">
+                    <path
+                        d="M10.5 0a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21m0 .79a9.72 9.72 0 0 1 0 19.42A9.72 9.72 0 0 1 10.5.8"
+                    ></path>
+                    <path
+                        d="M6.3 10.08H4.2v1.26h1.37zM15.53 11.34h1.27v-1.26h-2zM9.1 10.08l-.73 1.26h4.23l-.73-1.26zM15.87 12.82s-.24-.3-.59-.36l-.94.54s-.42.77 1.03 1.72c.26.17.37.34.47.62.03.11.11.26.24.18.17-.11.15-.46.18-.64.03-.24.04-.48.04-.72 0-.26-.03-.51-.1-.76-.06-.24-.18-.4-.33-.58M4.43 15.33c-.03.12.11.2.2.12l1.7-1.54-1.29-.73-.6 2.15zM8.14 7.8l-2.93 5.08 1.28.74 2.94-5.08zM10.1 7.36a.47.47 0 0 0-.18-.64l-.47-.27a.47.47 0 0 0-.64.17l-.45.86 1.28.73.46-.85zM11.15 4.85a.47.47 0 0 0-.64-.17l-.47.28a.47.47 0 0 0-.17.63l3.37 5.84 1.28-.74-3.37-5.84zM14.77 11.11l-1.28.74.5.88 1.28-.75z"
+                    ></path>
+                  </g>
+                </svg>
+                <span data-i18n="pdf_button">VISIT TELEMETRY</span>
+                <div class="btn-deco">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </a>
+            </div>
+            <div
+                class="wow fadeIn visable-hidden"
+                data-wow-duration="2s"
+                data-wow-delay="2s"
+            >
+              <!-- <div class="qrcode pdf-button"></div>  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="feature">
+    <div class="container-fluid">
+      <div class="row level-1-title" id="feature_title"></div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 card">
+          <div class="card-head wow fadeInDownSlow" data-wow-duration=".5s" data-wow-offset="50">
+            <img src="img/parami/verifydata.png">
+          </div>
+          <div class="card-content wow fadeIn" data-wow-duration=".5s">
+            <h3 data-i18n="pic1_title" class="level-2-title">DID</h3>
+            <p data-i18n="pic1_desc" class="content-text">
+              Parami Protocol provides a complete set of PDID (Parami DID) solutions compatible with W3C DID standard on
+              Parami Node, and expands its business on the basis of DID standard. Parami Protocol will also provide DID
+              aggregators for other DID standards.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 card">
+          <div class="card-head wow fadeInDownSlow" data-wow-duration=".5s">
+            <img src="img/parami/advertiser.png">
+          </div>
+          <div class="card-content wow fadeIn" data-wow-duration=".5s">
+            <h3 data-i18n="pic2_title" class="level-2-title">Protocol: AD Privacy</h3>
+            <p data-i18n="pic2_desc" class="content-text">
+              The AD Privacy Layer provides a personal crypto advertising preference (PCAP) document attached to user
+              DID, which contains user advertising privacy management service. The PCAP document works not only for
+              payment but also for user preference data. The preserved data can be used but can not be seen.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 card" style="margin-bottom: 100px;">
+          <div class="card-head wow fadeInDownSlow" data-wow-duration=".5s">
+            <img src="img/parami/adruntime.png">
+          </div>
+          <div class="card-content wow fadeIn" data-wow-duration=".5s">
+            <h3 data-i18n="pic3_title" class="level-2-title">Protocol: Application layer</h3>
+            <p data-i18n="pic3_desc" class="content-text">
+              The application layer provides decentralized oracle to collect data from conventional Internet for Ad
+              verification. It also defines the interfaces for tokenized advertising dapp to get AD privacy support.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="whitepaper">
+    <div class="container-fluid">
+      <div class="row level-1-title" id="whitepaper_title"></div>
+      <div class="row">
+        <div
+            class="wow fadeIn visable-hidden whitepaper-btn"
+            data-wow-duration="1s"
+            data-wow-delay="0.2s"
+        >
+          <a
+              href="#"
+              target="_blank"
+              class="whitepaper_pdf_btn"
+          >
+            <svg
+                width="21px"
+                height="21px"
+                xmlns="http://www.w3.org/2000/svg"
+                style="float: left; margin-left: 15px"
+            >
+              <g fill="#080f1e" fill-rule="evenodd">
+                <path
+                    d="M10.5 0a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21m0 .79a9.72 9.72 0 0 1 0 19.42A9.72 9.72 0 0 1 10.5.8"
+                ></path>
+                <path
+                    d="M6.3 10.08H4.2v1.26h1.37zM15.53 11.34h1.27v-1.26h-2zM9.1 10.08l-.73 1.26h4.23l-.73-1.26zM15.87 12.82s-.24-.3-.59-.36l-.94.54s-.42.77 1.03 1.72c.26.17.37.34.47.62.03.11.11.26.24.18.17-.11.15-.46.18-.64.03-.24.04-.48.04-.72 0-.26-.03-.51-.1-.76-.06-.24-.18-.4-.33-.58M4.43 15.33c-.03.12.11.2.2.12l1.7-1.54-1.29-.73-.6 2.15zM8.14 7.8l-2.93 5.08 1.28.74 2.94-5.08zM10.1 7.36a.47.47 0 0 0-.18-.64l-.47-.27a.47.47 0 0 0-.64.17l-.45.86 1.28.73.46-.85zM11.15 4.85a.47.47 0 0 0-.64-.17l-.47.28a.47.47 0 0 0-.17.63l3.37 5.84 1.28-.74-3.37-5.84zM14.77 11.11l-1.28.74.5.88 1.28-.75z"
+                ></path>
+              </g>
+            </svg>
+            <span>WHITEPAPER</span>
+            <div class="btn-deco">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="cooperation">
+    <div class="container-fluid">
+      <div class="row level-1-title" id="cooperation_title"></div>
+      <div class="row cooperation_btn">
+        <div
+            class="wow fadeIn visable-hidden cooperation-btn"
+            data-wow-duration="1s"
+            data-wow-delay="0.2s"
+        >
+          <a
+              href="mailto:info@parami.io"
+              rel="nofollow"
+              target="_blank"
+              class="cooperation_link_btn"
+          >
+            <i class="fa fa-envelope"></i>&nbsp;
+            <span data-i18n="cooperation_btn_1">CONTACT US</span>
+            <div class="btn-deco">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="hidden">
+  <div b-data-id="user">
+    <div
+        class="application-item-img user visible-xs visible-sm visible-md"
+    ></div>
+    <h3
+        class="space-bottom-4 level-2-title advantage-title"
+        data-i18n="icon1_title"
+    >
+      User Resource
+    </h3>
+    <p class="advantage-content-text" data-i18n="icon1_desc">
+      With hundreds of millions of users advertising behavior big data
+      resources, parami can accurately identify user characteristics
+    </p>
+  </div>
+  <div b-data-id="blockchain">
+    <div
+        class="application-item-img blockchain visible-xs visible-sm visible-md"
+    ></div>
+    <h3 class="space-bottom-4 level-2-title" data-i18n="icon2_title">
+      BlockChain Tech Accumulation
+    </h3>
+    <p class="advantage-content-text" data-i18n="icon2_desc">
+      Team members have an average of 4 year experience in BlockChain, and
+      participated in the project development of BTS, and BlockChain BigData
+      Monitoring Platform
+    </p>
+  </div>
+  <div b-data-id="antifraud">
+    <div
+        class="application-item-img antifraud visible-xs visible-sm visible-md"
+    ></div>
+    <h3 class="space-bottom-4 level-2-title" data-i18n="icon3_title">
+      Anti-fraud Experience
+    </h3>
+    <p class="advantage-content-text" data-i18n="icon3_desc">
+      Having served Tencent, Yixin, team members get industry-leading
+      anti-fraud technology accumulation
+    </p>
+  </div>
+
+  <div b-data-id="customer">
+    <div
+        class="application-item-img customer visible-xs visible-sm visible-md"
+    ></div>
+    <h3 class="space-bottom-4 level-2-title" data-i18n="icon4_title">
+      Customer Resource
+    </h3>
+    <p class="advantage-content-text" data-i18n="icon4_desc">
+      The core members of the team are responsible for a well-known
+      advertising company, with a large number of Top-500 customer resources
+    </p>
+  </div>
+  <div b-data-id="adtech">
+    <div
+        class="application-item-img adtech visible-xs visible-sm visible-md"
+    ></div>
+    <h3 class="space-bottom-4 level-2-title" data-i18n="icon5_title">
+      Advertising Technology Accumulation
+    </h3>
+    <p class="advantage-content-text" data-i18n="icon5_desc">
+      As long as 7-year RTB experience and served as advertising agency for
+      Google and Facebook
+    </p>
+  </div>
+</div>
+<script src="js/canvas.js"></script>
+<script>
+  switchLogoTitle()
+</script>
+</body>
+</html>
