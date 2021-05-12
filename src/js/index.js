@@ -83,6 +83,8 @@ function switchLang4Index(type) {
   //     $('.pdf-button').hide();
   //     $('.pdf-button').show();
   // }
+  //
+  $('#overview_title').html(randomFadeInString($.i18n('overview'), 3, 0));
   //项目特色
   $('#feature_title').html(randomFadeInString($.i18n('feature'), 3, 0));
   //核心优势
