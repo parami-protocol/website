@@ -566,3 +566,246 @@ p.icp {
     50%{ -webkit-transform: rotate(180deg);}
     100%{ -webkit-transform: rotate(360deg);}
 }
+
+
+#investment {
+
+}
+
+#investment .ngc {
+    background-image: url("../img/investment/ngc.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+    /*-webkit-transform: translate(0, 50%);*/
+    /*-ms-transform: translate(0, 50%);*/
+    /*transform: translate(0, 50%);*/
+}
+
+#investment .cms {
+    background-image: url("../img/investment/cms.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+    /*-webkit-transform: translate(0, 50%);*/
+    /*-ms-transform: translate(0, 50%);*/
+    /*transform: translate(0, 50%);*/
+}
+
+#investment .gbv {
+    background-image: url("../img/investment/gbv.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+    /*-webkit-transform: translate(0, 50%);*/
+    /*-ms-transform: translate(0, 50%);*/
+    /*transform: translate(0, 50%);*/
+}
+
+
+#investment .dfg {
+    background-image: url("../img/investment/dfg.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 60px;*/
+    text-align: center;
+    /*-webkit-transform: translate(0, 25%);*/
+    /*-ms-transform: translate(0, 25%);*/
+    /*transform: translate(0, 25%);*/
+}
+
+#investment .genblock {
+    /*background-image: url("../img/investment/genblock.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: contain;*/
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+    /*-webkit-transform: translate(0, 25%);*/
+    /*-ms-transform: translate(0, 25%);*/
+    /*transform: translate(0, 25%);*/
+}
+
+#investment .signum {
+    background-image: url("../img/investment/signum.jpeg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 60px;*/
+    text-align: center;
+    /*-webkit-transform: translate(0, 25%);*/
+    /*-ms-transform: translate(0, 25%);*/
+    /*transform: translate(0, 25%);*/
+}
+
+#investment .ax1a8 {
+    background-image: url("../img/investment/axia.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+}
+
+#investment .spark {
+    background-image: url("../img/investment/spark.jpeg");
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-size: 70%;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+}
+
+#investment .digital-re {
+    background-image: url("../img/investment/digital-re.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+}
+
+
+#investment .au21 {
+    background-image: url("../img/investment/AU21.png");
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-size: 50%;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+}
+
+
+#investment .gbic {
+    background-image: url("../img/investment/gbic.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+}
+
+#investment .pnyx {
+    background-image: url("../img/investment/pnxy.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+}
+
+
+#investment .ruby {
+    background-image: url("../img/investment/ruby.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+}
+
+#investment .titans {
+    background-image: url("../img/investment/titan.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+}
+
+#investment .bella {
+    background-image: url("../img/investment/Bella.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+}
+
+#investment .gate {
+    background-image: url("../img/investment/gate.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+}
+
+#investment .blockark {
+    background-image: url("../img/investment/ruby.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+}
+
+#investment .weblock {
+    background-image: url("../img/investment/weblock.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+}
+
+#investment .blockark {
+    background-image: url("../img/investment/blockark.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /*width: 33.33%;*/
+    /*height: 100px;*/
+    text-align: center;
+}
+
+#investment ul li {
+    width: 33%;
+    height: 200px;
+}
+
+@media(max-width:767px){
+    #investment ul li {
+        margin: 0 auto;
+        height: 100px;
+    }
+}
+
+@media(min-width:768px){
+    #investment ul li {
+        margin: 0 auto;
+        height: 100px;
+    }
+}
+
+
+ul li {
+    list-style-type: none;
+}
