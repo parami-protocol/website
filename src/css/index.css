@@ -246,23 +246,23 @@ p.icp {
 }
 
 .application-item-img.user {
-    background-image: url(../img/advantage/user-s.png);
+    background-image: url(../img/advantage-v2/user-s.png);
 }
 
 .application-item-img.blockchain {
-    background-image: url(../img/advantage/blockchain-s.png);
+    background-image: url(../img/advantage-v2/blockchain-s.png);
 }
 
 .application-item-img.antifraud {
-    background-image: url(../img/advantage/antifraud-s.png);
+    background-image: url(../img/advantage-v2/antifraud-s.png);
 }
 
 .application-item-img.customer {
-    background-image: url(../img/advantage/customer-s.png);
+    background-image: url(../img/advantage-v2/customer-s.png);
 }
 
 .application-item-img.adtech {
-    background-image: url(../img/advantage/adtech-s.png);
+    background-image: url(../img/advantage-v2/adtech-s.png);
 }
 
 @media (min-width: 768px) {
@@ -501,7 +501,7 @@ p.icp {
 }
 
 #advantage {
-    margin-top: 200px;
+    /*margin-top: 200px;*/
 }
 .lang,.login-nav {
     position: fixed;
@@ -521,7 +521,7 @@ p.icp {
 
 @media (max-width: 767px) {
     #advantage {
-        margin-top: 150px;
+        /*margin-top: 150px;*/
     }
 
     .login-nav {

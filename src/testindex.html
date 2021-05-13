@@ -308,14 +308,14 @@
     <div class="container-fluid">
       <div class="row level-1-title" id="overview_title"></div>
 
-      <div class="row" style="margin-bottom: 40px;">
-        <div class="col-md-12 col-sm-12 card" style="padding-bottom: 40px;">
+      <div class="row" style="padding-bottom: 40px;">
+        <div class="col-md-12 col-sm-12 card" style="">
           <div class="card-head wow fadeInDownSlow" data-wow-duration=".5s" data-wow-offset="50">
             <img src="img/parami/overview.png">
           </div>
           <div class="card-content wow fadeIn" data-wow-duration=".5s">
             <h3 data-i18n="pic1_title" class="level-2-title none">Protocol Overview</h3>
-            <p data-i18n="pic1_desc" class="content-text">
+            <p data-i18n="pic1_desc"  style="padding: 20px 0 40px;" class="content-text">
               Parami Protocol proposed an AD 3.0 paradigm powered by blockchain for Web 3.0. It provides a protocol stack for building a user-centric, tokenized advertising economy. As a parachain built on Substrate, it serves all the other parachains in Polkadot/Kusama through relaychain.
             </p>
           </div>
@@ -339,6 +339,105 @@
               Parami Protocol provides a complete set of PDID (Parami DID) solutions compatible with W3C DID standard on
               Parami Node, and expands its business on the basis of DID standard. Parami Protocol will also provide DID
               aggregators for other DID standards.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 card">
+          <div class="card-head wow fadeInDownSlow" data-wow-duration=".5s">
+            <img src="img/parami/advertiser.png">
+          </div>
+          <div class="card-content wow fadeIn" data-wow-duration=".5s">
+            <h3 data-i18n="pic2_title" class="level-2-title">Protocol: AD Privacy</h3>
+            <p data-i18n="pic2_desc" class="content-text">
+              The AD Privacy Layer provides a personal crypto advertising preference (PCAP) document attached to user
+              DID, which contains user advertising privacy management service. The PCAP document works not only for
+              payment but also for user preference data. The preserved data can be used but can not be seen.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 card" style="margin-bottom: 50px; padding-bottom: 50px;">
+          <div class="card-head wow fadeInDownSlow" data-wow-duration=".5s">
+            <img src="img/parami/adruntime.png">
+          </div>
+          <div class="card-content wow fadeIn" data-wow-duration=".5s">
+            <h3 data-i18n="pic3_title" class="level-2-title">Protocol: Application layer</h3>
+            <p data-i18n="pic3_desc" class="content-text">
+              The application layer provides decentralized oracle to collect data from conventional Internet for Ad
+              verification. It also defines the interfaces for tokenized advertising dapp to get AD privacy support.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="advantage">
+    <div class="container-fluid">
+      <div class="row level-1-title" id="advantage_title"></div>
+      <div class="application-items hidden-xs hidden-sm hidden-md">
+        <ul class="list-unstyled clearfix">
+          <li>
+            <a href="javascript:;" class="active">
+              <div class="application-item-img user"></div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="application-item-img blockchain"></div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="application-item-img antifraud"></div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="application-item-img customer"></div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="application-item-img adtech"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="application-content hidden-xs hidden-sm hidden-md">
+        <div b-data-target="user" class="user"></div>
+        <div b-data-target="blockchain" class="blockchain"></div>
+        <div b-data-target="antifraud" class="antifraud"></div>
+        <div b-data-target="customer" class="customer"></div>
+        <div b-data-target="adtech" class="adtech"></div>
+      </div>
+      <div class="carousel-slide visible-xs visible-sm visible-md">
+        <div b-data-target="user" class="carousel-slide-content"></div>
+        <div
+            b-data-target="blockchain"
+            class="carousel-slide-content"
+        ></div>
+        <div b-data-target="antifraud" class="carousel-slide-content"></div>
+        <div b-data-target="customer" class="carousel-slide-content"></div>
+        <div b-data-target="adtech" class="carousel-slide-content"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" class="hidden">
+    <div class="container-fluid">
+      <div class="row level-1-title" id="team_title"></div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 card">
+          <div class="card-head wow fadeInDownSlow" data-wow-duration=".5s" data-wow-offset="50">
+            <img src="img/parami/verifydata.png">
+          </div>
+          <div class="card-content wow fadeIn" data-wow-duration=".5s">
+            <h3 data-i18n="pic1_title" class="level-2-title hidden">DID</h3>
+            <p data-i18n="pic1_desc" class="content-text">
+<!--              Parami Protocol provides a complete set of PDID (Parami DID) solutions compatible with W3C DID standard on-->
+<!--              Parami Node, and expands its business on the basis of DID standard. Parami Protocol will also provide DID-->
+<!--              aggregators for other DID standards.-->
             </p>
           </div>
         </div>
@@ -413,6 +512,7 @@
       </div>
     </div>
   </section>
+
   <section id="cooperation">
     <div class="container-fluid">
       <div class="row level-1-title" id="cooperation_title"></div>
@@ -441,6 +541,7 @@
       </div>
     </div>
   </section>
+
 </div>
 
 <div class="hidden">
@@ -452,11 +553,10 @@
         class="space-bottom-4 level-2-title advantage-title"
         data-i18n="icon1_title"
     >
-      User Resource
+      IM support
     </h3>
     <p class="advantage-content-text" data-i18n="icon1_desc">
-      With hundreds of millions of users advertising behavior big data
-      resources, parami can accurately identify user characteristics
+      Parami is designed for IM apps.  The Parami SDK will support users to participate in Ad  interaction in IM explorer or MiniApps.
     </p>
   </div>
   <div b-data-id="blockchain">
@@ -464,12 +564,10 @@
         class="application-item-img blockchain visible-xs visible-sm visible-md"
     ></div>
     <h3 class="space-bottom-4 level-2-title" data-i18n="icon2_title">
-      BlockChain Tech Accumulation
+      DAO support
     </h3>
     <p class="advantage-content-text" data-i18n="icon2_desc">
-      Team members have an average of 4 year experience in BlockChain, and
-      participated in the project development of BTS, and BlockChain BigData
-      Monitoring Platform
+      Parami will support other DAOs as seed groups to expand DID ecosystem. Other DAOs can register on Parami and manage their DAOs on it for extra incentive.
     </p>
   </div>
   <div b-data-id="antifraud">
@@ -477,11 +575,10 @@
         class="application-item-img antifraud visible-xs visible-sm visible-md"
     ></div>
     <h3 class="space-bottom-4 level-2-title" data-i18n="icon3_title">
-      Anti-fraud Experience
+      Governance support
     </h3>
     <p class="advantage-content-text" data-i18n="icon3_desc">
-      Having served Tencent, Yixin, team members get industry-leading
-      anti-fraud technology accumulation
+      Parami Protocol is fully governed by all token holders. They can vote for the council and all the proposals to optimize the network.
     </p>
   </div>
 
@@ -490,11 +587,10 @@
         class="application-item-img customer visible-xs visible-sm visible-md"
     ></div>
     <h3 class="space-bottom-4 level-2-title" data-i18n="icon4_title">
-      Customer Resource
+      NFT support
     </h3>
     <p class="advantage-content-text" data-i18n="icon4_desc">
-      The core members of the team are responsible for a well-known
-      advertising company, with a large number of Top-500 customer resources
+      Parami Protocol supports NFT as ticket, badge or collector for advertising campaign.
     </p>
   </div>
   <div b-data-id="adtech">
@@ -502,11 +598,10 @@
         class="application-item-img adtech visible-xs visible-sm visible-md"
     ></div>
     <h3 class="space-bottom-4 level-2-title" data-i18n="icon5_title">
-      Advertising Technology Accumulation
+      Yield Farming support
     </h3>
     <p class="advantage-content-text" data-i18n="icon5_desc">
-      As long as 7-year RTB experience and served as advertising agency for
-      Google and Facebook
+      Parami supports liquidity mining (Yield Farming) so that users are able to exchange rewarded token to stable coins and advertisers can easily build an advertising fund.
     </p>
   </div>
 </div>
