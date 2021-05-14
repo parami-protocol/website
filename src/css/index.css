@@ -243,6 +243,7 @@ p.icp {
     width: 80px;
     height: 80px;
     background-size: 80px 80px;
+    display: none!important;
 }
 
 .application-item-img.user {
