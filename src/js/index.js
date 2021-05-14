@@ -90,11 +90,12 @@ function switchLang4Index(type) {
   //核心优势
   $('#advantage_title').html(randomFadeInString($.i18n('advantage'), 3, 0));
   //创始人
-  $('#founder_title').html(randomFadeInString($.i18n('founder'), 3, 0));
+  // $('#founder_title').html(randomFadeInString($.i18n('founder'), 3, 0));
+  $('#team_title').html(randomFadeInString($.i18n('founder'), 3, 0));
   //联合创始人
   $('#co_founder_and_technical_consultant_title').html(randomFadeInString($.i18n('co_founder_and_technical_consultant'), 3, 0));
   //投资机构
-  $('#agency_title').html(randomFadeInString($.i18n('agency'), 3, 0));
+  $('#investment_title').html(randomFadeInString($.i18n('agency'), 3, 0));
   //交易所
   $('#exchange_title').html(randomFadeInString($.i18n('exchange'), 3, 0));
   //合作伙伴
