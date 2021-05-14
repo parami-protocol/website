@@ -91,7 +91,7 @@ function switchLang4Index(type) {
   $('#advantage_title').html(randomFadeInString($.i18n('advantage'), 3, 0));
   //创始人
   // $('#founder_title').html(randomFadeInString($.i18n('founder'), 3, 0));
-  $('#team_title').html(randomFadeInString($.i18n('founder'), 3, 0));
+  $('#team_title').html(randomFadeInString($.i18n('team'), 3, 0));
   //联合创始人
   $('#co_founder_and_technical_consultant_title').html(randomFadeInString($.i18n('co_founder_and_technical_consultant'), 3, 0));
   //投资机构
