@@ -267,6 +267,9 @@ p.icp {
 }
 
 @media (min-width: 768px) {
+    #advantage .application-items {
+        display: none;
+    }
     .application-items {
         /* margin-top: 50px; */
         margin-top: 200px;
@@ -797,16 +800,60 @@ p.icp {
         margin: 0 auto;
         height: 100px;
     }
+    #investment .ngc {
+        background-size: 160%;
+    }
+    #investment .cms{
+        background-size: 80%;
+    }
+    #investment .dfg {
+        background-size: 76%;
+    }
+    #investment .investment_main_part  {
+        margin-top: -30px;
+    }
+
+    #investment .genblock svg{
+        width: 100%!important;
+        -webkit-transform: translate(0, 100%);
+        -ms-transform: translate(0, 100%);
+        transform: translate(0, 100%);
+    }
+
+    #investment .signum {
+        background-size: 75%;
+    }
+
+    #investment .digital-re {
+        background-size: 80%;
+    }
+
+    #investment .au21 {
+        background-size: 70%;
+    }
+
+    #investment .bella {
+        background-size: 80%;
+    }
+
+    #investment .titans {
+        background-size: 90%;
+    }
+
+    #investment .weblock {
+        background-size: 80%;
+    }
+
 }
 
 @media(min-width:768px){
-    #investment ul li {
-        margin: 0 auto;
-        height: 100px;
-    }
+#investment ul li {
+    margin: 0 auto;
+    height: 100px;
+}
 }
 
 
 ul li {
-    list-style-type: none;
+list-style-type: none;
 }
