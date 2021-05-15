@@ -795,6 +795,14 @@ p.icp {
     height: 200px;
 }
 
+/*.overview_img {*/
+/*    background-image: url(../img/parami/overview.png);*/
+/*    background-position: center;*/
+/*    background-size: 130%;*/
+/*    height: 120px;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
 @media(max-width:767px){
     #investment ul li {
         margin: 0 auto;
