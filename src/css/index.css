@@ -795,6 +795,10 @@ p.icp {
     height: 200px;
 }
 
+#tokenomics .card-head img {
+    width: 100%;
+}
+
 /*.overview_img {*/
 /*    background-image: url(../img/parami/overview.png);*/
 /*    background-position: center;*/
