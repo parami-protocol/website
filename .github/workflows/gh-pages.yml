@@ -30,3 +30,4 @@ jobs:
         publish_dir: ./dist
         allow_empty_commit: true
         cname: parami.io
+        force_orphan: true
