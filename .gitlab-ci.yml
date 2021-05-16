@@ -1,10 +1,15 @@
 image: node:8
 
+workflow:
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
 pages:
   script:
-    - npm install -g yarn
     - yarn
     - yarn build
   artifacts:
     paths:
       - dist
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
