@@ -243,32 +243,33 @@ p.icp {
     width: 80px;
     height: 80px;
     background-size: 80px 80px;
-    display: none!important;
+    /*display: none;*/
 }
 
-.application-item-img.user {
-    background-image: url(../img/advantage-v2/user-s.png);
+.application-item-img.im {
+    /*background-image: url(../img/advantage-v2/user-s.png);*/
+    background-image: url("../img/parami/im.svg");
 }
 
-.application-item-img.blockchain {
-    background-image: url(../img/advantage-v2/blockchain-s.png);
+.application-item-img.dao {
+    background-image: url(../img/parami/dao.svg);
 }
 
-.application-item-img.antifraud {
-    background-image: url(../img/advantage-v2/antifraud-s.png);
+.application-item-img.nft {
+    background-image: url(../img/parami/nft.svg);
 }
 
-.application-item-img.customer {
-    background-image: url(../img/advantage-v2/customer-s.png);
+.application-item-img.mining {
+    background-image: url(../img/parami/mining.svg);
 }
 
-.application-item-img.adtech {
-    background-image: url(../img/advantage-v2/adtech-s.png);
+.application-item-img.governance {
+    background-image: url(../img/parami/governance.svg);
 }
 
 @media (min-width: 768px) {
     #advantage .application-items {
-        display: none;
+        /*display: none;*/
     }
     .application-items {
         /* margin-top: 50px; */

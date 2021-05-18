@@ -92,7 +92,7 @@ function switchLang4Index(type) {
   //创始人
   // $('#founder_title').html(randomFadeInString($.i18n('founder'), 3, 0));
   $('#team_title').html(randomFadeInString($.i18n('team'), 3, 0));
-  // 经济模型
+  // 经济模型ADVANTAGE
   $('#tokenomics_title').html(randomFadeInString($.i18n('tokenomics'), 3, 0));
   //联合创始人
   $('#co_founder_and_technical_consultant_title').html(randomFadeInString($.i18n('co_founder_and_technical_consultant'), 3, 0));
