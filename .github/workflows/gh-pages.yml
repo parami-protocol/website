@@ -23,10 +23,11 @@ jobs:
     - run: yarn
     - run: yarn build
 
-    - run: echo -n parami.io > dist/CNAME
-
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
+        allow_empty_commit: true
+        cname: parami.io
+        force_orphan: true
