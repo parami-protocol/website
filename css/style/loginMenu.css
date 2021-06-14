@@ -1,0 +1,19 @@
+.navbar {
+    display: none !important;
+}
+
+.login-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        display: block !important;
+    }
+
+    .login-nav {
+        display: none !important;
+    }
+}

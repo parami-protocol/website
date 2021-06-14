@@ -1,0 +1,56 @@
+.protocal {
+    color: #000;
+    padding: 0 30px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.l_title {
+    color: #000;
+    font-size: 20px;
+    margin: 40px 0 20px;
+    border-radius: 3px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.protocal .cont {
+    margin: 0;
+    line-height: 22px;
+}
+
+.protocal .l_content {
+    font-size: 14px;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 0 30px;
+}
+
+.protocal .paragraph {
+    padding: 30px 0 10px;
+    font-size: 14px;
+}
+
+.protocal p, .protocal ul, .protocal li, .protocal dl, .protocal dt, .protocal dd {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.protocal .indent {
+    padding-left: 28px;
+}
+
+.protocal em {
+    display: block;
+}
+
+.protocal-btn-wrapper {
+    text-align: center;
+    margin: 30px 0 40px;
+}
+
+.protocal-btn {
+    text-align: center;
+    width: 100px;
+}
